@@ -1,6 +1,6 @@
 public class Datas {
 
-  //ALTER TABLE mytest.instance AUTO_INCREMENT = 1;
+  //ALTER TABLE roles AUTO_INCREMENT = 1;
   // serial in postgre
 
   static String deleteRoles="truncate table roles RESTART IDENTITY cascade";

@@ -1,5 +1,5 @@
 @wip
-Feature: Eployee login
+Feature: Employee login
   Employee Create Purchase Invoice
 
   Scenario: Login as employee
