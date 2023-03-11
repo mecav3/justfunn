@@ -1,4 +1,4 @@
-package steps;
+package util;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -12,7 +12,7 @@ public class CR {
             FileInputStream file = new FileInputStream("configuration.properties");
             properties.load(file);
         } catch (Exception e) {
-            System.out.println("steps.CR File Exception");
+            System.out.println("util.CR File Exception");
         }
     }
 

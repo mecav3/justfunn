@@ -5,9 +5,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
+import util.CR;
+import util.Driver;
 
-public class LogSteps {
+public class logins {
 
     @Given("user at login page")
     public void userAtLoginPage() {

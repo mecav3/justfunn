@@ -1,6 +1,7 @@
+package util;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import steps.Driver;
 
 import java.time.LocalTime;
 

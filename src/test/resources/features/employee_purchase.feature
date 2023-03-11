@@ -1,4 +1,4 @@
-@wip
+@employee
 Feature: Employee login
   Employee Create Purchase Invoice
 

@@ -6,8 +6,10 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import poms.EmployeePage;
+import util.Driver;
+import util.JS;
 
-public class Log4Steps {
+public class employee_purchase {
     EmployeePage lp = new EmployeePage();
 
     @When("user clicks invoices")

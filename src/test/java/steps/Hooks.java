@@ -2,9 +2,6 @@ package steps;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import steps.Driver;
 
 // hooks general implementaion to all methods
 // @Before / @After - each and every SCENARIO in our project (unless we specify with @TAGS)

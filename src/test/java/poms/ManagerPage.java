@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import util.Driver;
 
-public class LogPage {
-    public LogPage() {
+public class ManagerPage {
+    public ManagerPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

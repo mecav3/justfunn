@@ -1,3 +1,5 @@
+package data;
+
 import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -14,16 +16,15 @@ public class Data {
             if (!tableExistsSQL(c, "active_user"))
                 System.out.println("no view! creating:" + s.executeUpdate(query_create));
             else System.out.println("there is view!\n");
+            ResultSet rs = s.executeQuery(query);
 
-              ResultSet rs = s.executeQuery(query);
+            //   s.addBatch(data.Datas.deleteRoles);
+//    s.addBatch(data.Datas.deleteUsers);
+            //   s.addBatch("ALTER TABLE roles serial = 1");
+            //  s.addBatch(data.Datas.insertRoles);
+            //   s.addBatch(data.Datas.insertUsers);
 
-         //   s.addBatch(Datas.deleteRoles);
-//    s.addBatch(Datas.deleteUsers);
-         //   s.addBatch("ALTER TABLE roles serial = 1");
-          //  s.addBatch(Datas.insertRoles);
-        //   s.addBatch(Datas.insertUsers);
-
-           // System.out.println("s.executeBatch() = " + s.executeBatch());
+            // System.out.println("s.executeBatch() = " + s.executeBatch());
 
             while (rs.next()) {
                 String tit = rs.getString("title");
