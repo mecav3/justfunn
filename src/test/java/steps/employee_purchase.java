@@ -31,7 +31,7 @@ public class employee_purchase {
 
     @Then("user creates new purchase invoice")
     public void user_creates_new_purchase_invoice() {
-        new Select(lp.selectVendor).selectByIndex(1);
+         new Select(lp.selectVendor).selectByIndex(1);
         lp.saveVendor.click();
 
         new Select(lp.selectProduct).selectByIndex(1);
@@ -42,6 +42,7 @@ public class employee_purchase {
         lp.buttonAddItem.click();
 
         String e_invoice = Driver.getDriver().findElement(By.id("invoiceNo")).getAttribute("value");
+        System.out.println(e_invoice);
     }
 }
 
