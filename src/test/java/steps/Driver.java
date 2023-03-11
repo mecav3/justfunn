@@ -23,7 +23,8 @@ public class Driver {
             switch (browserType) {
 
                 case "chrome":
-                    WebDriverManager.chromedriver().browserVersion("110.0.5481").setup();
+                  //  WebDriverManager.chromedriver().browserVersion("110.0.5481").setup();
+                    WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--lang=en");
                     options.addArguments("--remote-allow-origins=*");
