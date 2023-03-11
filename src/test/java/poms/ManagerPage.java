@@ -16,34 +16,7 @@ public class ManagerPage {
     @FindBy(linkText = "Purchase Invoice")
     public WebElement purchaseInvoiceLink;
 
-    @FindBy(tagName = "h2")
-    public WebElement purchaseInvoiceListHeader;
-
-    @FindBy(tagName = "h3")
-    public WebElement createNewPurchaseInvoiceHeader;
-
-    @FindBy(id = "companyCreateLink")
-    public WebElement companyCreateLink;
-
-    @FindBy(id = "vendor")
-    public WebElement selectVendor;
-
-    @FindBy(name = "action")
-    public WebElement saveVendor;
-
-    @FindBy(id = "product")
-    public WebElement selectProduct;
-
-    @FindBy(id = "quantity")
-    public WebElement quantity;
-
-    @FindBy(id = "price")
-    public WebElement price;
-
-    @FindBy(id = "tax")
-    public WebElement tax;
-
-    @FindBy(xpath = "//button[@value='addItem']")
-    public WebElement buttonAddItem;
+    @FindBy(css = "select.form-select.form-select-sm")
+    public WebElement select;
 
 }

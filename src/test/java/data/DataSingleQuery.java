@@ -17,7 +17,7 @@ public class DataSingleQuery {
             c = DriverManager.getConnection(Datas.DB_URL, "postgres", "admin123");
             s = c.createStatement();
 
-            ResultSet rs = s.executeQuery(Datas.awaiting_Approval);
+            ResultSet rs = s.executeQuery(Datas.awaiting_ApprovalGreentechPurchase);
 
             while (rs.next()) {
                 String tit = rs.getString("invoice_no");

@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:cucumber-report.html", "json:target/cucumber.json", "junit:target/junit/junit-report.xml"},
         features = "src/test/resources/features",
         glue = "steps",
-        tags =  "@manager ",
+        tags =  "@employee or @manager ",
         publish = true
 )
 
