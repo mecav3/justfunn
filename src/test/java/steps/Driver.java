@@ -23,7 +23,7 @@ public class Driver {
             switch (browserType) {
 
                 case "chrome":
-                    WebDriverManager.chromedriver().setup();
+                    WebDriverManager.chromedriver().browserVersion("110.0.5481").setup();
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--lang=en");
                     driverPool.set(new ChromeDriver(options));
