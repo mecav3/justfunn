@@ -3,6 +3,7 @@ public class Datas {
   //ALTER TABLE roles AUTO_INCREMENT = 1;
   // serial in postgre
 
+  static String getAwaiting_Approval= "SELECT invoice_no FROM invoices WHERE invoice_status='AWAITING_APPROVAL'";
   static String deleteRoles="truncate table roles RESTART IDENTITY cascade";
   static String insertRoles ="insert into roles(insert_date_time, insert_user_id, is_deleted, last_update_date_time,last_update_user_id, description)" +
         " values('2022-09-09 00:00:00', 1, false, '2022-09-09 00:00:00', 1, 'Root User'), ('2022-09-09 00:00:00', 1, false, '2022-09-09 00:00:00', 1, 'Admin'), ('2022-09-09 00:00:00', 1, false, '2022-09-09 00:00:00', 1, 'Manager'), ('2022-09-09 00:00:00', 1, false, '2022-09-09 00:00:00', 1, 'Employee')";
@@ -19,7 +20,5 @@ public class Datas {
           "('2022-09-09 00:00:00', 1, false, '2022-09-09 00:00:00', 1, 'manager@bluetech.com', '$2a$10$nAB5j9G1c3JHgg7qzhiIXO7cqqr5oJ3LXRNQJKssDUwHXzDGUztNK', 'Tom', 'Hanks', '+1 (356) 258-3544', 3, 3, true), " +
           "('2022-09-09 00:00:00', 1, false, '2022-09-09 00:00:00', 1, 'employee@bluetech.com', '$2a$10$nAB5j9G1c3JHgg7qzhiIXO7cqqr5oJ3LXRNQJKssDUwHXzDGUztNK', 'Mike', 'Smith', '+1 (356) 258-3544', 4, 3, true), " +
           "('2022-09-09 00:00:00', 1, false, '2022-09-09 00:00:00', 1, 'admin@redtech.com', '$2a$10$nAB5j9G1c3JHgg7qzhiIXO7cqqr5oJ3LXRNQJKssDUwHXzDGUztNK', 'John', 'Doe', '+1 (659) 756-1265', 2, 4, true);";
-
-
 
 }
