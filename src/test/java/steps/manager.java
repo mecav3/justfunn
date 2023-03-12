@@ -11,9 +11,10 @@ import util.JS;
 import java.util.List;
 
 public class manager extends ManagerPage {
-    @When("check unapproved")
-    public void checkUnapproved() {
-        List<String> list = DataSingleQuery.getAwaitingApprovel();
+
+    @When("check {string} unapproved")
+    public void checkUnapproved(String usr) {
+        List<String> list = DataSingleQuery.getAwaitingApprovel(usr);
         System.out.println(list);
         if (list.size() < 1) {
             System.out.println("no awaiting, quiting method");

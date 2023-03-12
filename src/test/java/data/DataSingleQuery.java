@@ -9,15 +9,17 @@ import java.util.List;
 
 public class DataSingleQuery {
 
-    public static List<String> getAwaitingApprovel() {
+    public static List<String> getAwaitingApprovel(String usr) {
         Connection c;
         Statement s;
         List<String> list = new ArrayList<>();
         try {
             c = DriverManager.getConnection(Datas.DB_URL, "postgres", "admin123");
             s = c.createStatement();
+            ResultSet rs = null;
 
-            ResultSet rs = s.executeQuery(Datas.awaiting_ApprovalGreentechPurchase);
+            if (usr.contains("greentech")) rs = s.executeQuery(Datas.awaiting_ApprovalGreentechPurchase);
+            else rs = s.executeQuery(Datas.awaiting_ApprovalBluetechPurchase);
 
             while (rs.next()) {
                 String tit = rs.getString("invoice_no");

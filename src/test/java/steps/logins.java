@@ -15,11 +15,6 @@ public class logins {
         Driver.getDriver().get(CR.get("url"));
     }
 
-    @When("user enters root username")
-    public void user_enters_root_username() {
-        Driver.getDriver().findElement(By.id("username")).sendKeys(CR.get("root"));
-    }
-
     @When("user enters password")
     public void user_enters_password() {
         Driver.getDriver().findElement(By.id("password")).sendKeys(CR.get("pass"));
@@ -35,19 +30,9 @@ public class logins {
         Assert.assertTrue(Driver.getDriver().findElement(By.xpath("(//img)[2]")).isDisplayed());
     }
 
-    @When("user enters admin username")
-    public void user_enters_admin_username() {
-        Driver.getDriver().findElement(By.id("username")).sendKeys(CR.get("admin"));
-    }
-
-    @When("user enters manager username")
-    public void user_enters_manaager_username() {
-        Driver.getDriver().findElement(By.id("username")).sendKeys(CR.get("manager"));
-    }
-
-    @When("user enters employee username")
-    public void user_enters_employee_username() {
-        Driver.getDriver().findElement(By.id("username")).sendKeys(CR.get("employee"));
+    @When("user enters {string} username")
+    public void userEntersUsername(String usr) {
+        Driver.getDriver().findElement(By.id("username")).sendKeys(usr);
     }
 
 }

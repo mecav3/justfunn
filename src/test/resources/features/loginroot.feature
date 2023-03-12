@@ -7,7 +7,7 @@ Feature: Account app login feature
     Given user at login page
 
   Scenario: Login as root
-    When user enters root username
+    When user enters "root@cydeo.com" username
     And user enters password
     Then user clicks login button
     Then user should be logged in
